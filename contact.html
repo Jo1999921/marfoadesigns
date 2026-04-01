@@ -9,40 +9,62 @@
 <body>
 
 <header>
-  <nav>
+  <nav class="container nav">
     <div class="logo">Marfoa Designs</div>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="portfolio.html">Portfolio</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a class="active" href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
 
-<section class="container">
-  <div class="section-title">
-    <h1>Contact</h1>
-    <p>Reach out for flyer and poster design work.</p>
-  </div>
+<section class="section">
+  <div class="container">
+    <div class="section-title">
+      <h1>Contact</h1>
+      <p>Reach out for flyer and poster design requests.</p>
+    </div>
 
-  <div class="contact-box">
-    <p><strong>Phone:</strong> 0505628889 / 0266204330</p>
-    <p><strong>Instagram:</strong> @mee.marfoaaa</p>
-    <p><strong>Snapchat:</strong> @mee.marfoaaa</p>
-  </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Contact Details</h3>
+        <p><strong>Phone:</strong> 0505628889 / 0266204330</p>
+        <p><strong>Instagram:</strong> @mee.marfoaaa</p>
+        <p><strong>Snapchat:</strong> @mee.marfoaaa</p>
+        <br>
+        <p>
+          <strong>WhatsApp:</strong>
+          <a class="whatsapp-link" href="https://wa.me/233505628889" target="_blank">Chat directly on WhatsApp</a>
+        </p>
+        <p class="small-note">
+          Replace the number above if needed.
+        </p>
+      </div>
 
-  <form>
-    <input type="text" placeholder="Your name">
-    <input type="email" placeholder="Your email">
-    <textarea placeholder="Tell us what design you need"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+      <div class="contact-card">
+        <h3>Project Inquiry</h3>
+        <form>
+          <input type="text" placeholder="Your name">
+          <input type="email" placeholder="Your email">
+          <input type="text" placeholder="Type of design needed">
+          <textarea placeholder="Tell Marfoa Designs what you need"></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+        <p class="small-note">
+          This form is only visual for now. It will not send messages until connected to a service like Formspree.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Marfoa Designs. All rights reserved.</p>
+  <div class="container">
+    <p>© 2026 Marfoa Designs. All rights reserved.</p>
+  </div>
 </footer>
 
 </body>
