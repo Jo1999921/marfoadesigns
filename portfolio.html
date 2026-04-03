@@ -25,53 +25,58 @@
   <div class="container">
     <div class="section-title">
       <h1>Portfolio</h1>
-      <p>Sample flyer and poster designs created by Marfoa Designs.</p>
+      <p>Some sample flyer designs from Marfoa Designs.</p>
     </div>
 
     <div class="portfolio-grid">
-
       <div class="portfolio-item">
-        <a href="flyer1.jpeg" target="_blank">
-          <img src="flyer1.jpeg" alt="Flyer design 1">
-        </a>
+        <img src="flyer1.jpeg" alt="Flyer design 1" onclick="openLightbox('flyer1.jpeg')">
         <p>Business Promotion Flyer</p>
       </div>
 
       <div class="portfolio-item">
-        <a href="flyer2.jpeg" target="_blank">
-          <img src="flyer2.jpeg" alt="Flyer design 2">
-        </a>
+        <img src="flyer2.jpeg" alt="Flyer design 2" onclick="openLightbox('flyer2.jpeg')">
         <p>Event Poster</p>
       </div>
 
       <div class="portfolio-item">
-        <a href="flyer3.jpeg" target="_blank">
-          <img src="flyer3.jpeg" alt="Flyer design 3">
-        </a>
+        <img src="flyer3.jpeg" alt="Flyer design 3" onclick="openLightbox('flyer3.jpeg')">
         <p>Product Campaign Design</p>
       </div>
 
       <div class="portfolio-item">
-        <a href="flyer4.jpeg" target="_blank">
-          <img src="flyer4.jpeg" alt="Flyer design 4">
-        </a>
+        <img src="flyer4.jpeg" alt="Flyer design 4" onclick="openLightbox('flyer4.jpeg')">
         <p>Social Media Flyer</p>
       </div>
-
     </div>
 
     <p class="small-note center">
-      Click any design to view it in full size.
+      Click any design to view it larger.
     </p>
-
   </div>
 </section>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img" alt="Expanded portfolio image">
+</div>
 
 <footer>
   <div class="container">
     <p>© 2026 Marfoa Designs. All rights reserved.</p>
   </div>
 </footer>
+
+<script>
+  function openLightbox(imageSrc) {
+    document.getElementById("lightbox").style.display = "flex";
+    document.getElementById("lightbox-img").src = imageSrc;
+  }
+
+  function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
+  }
+</script>
 
 </body>
 </html>
