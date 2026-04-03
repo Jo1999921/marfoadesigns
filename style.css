@@ -329,6 +329,11 @@ header {
   transform: scale(1.15);
 }
 
+.card,
+.service-icon {
+  transition: all 0.3s ease;
+}
+
 /* CARD ENTRANCE ANIMATION */
 .animate-card {
   opacity: 0;
