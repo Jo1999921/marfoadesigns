@@ -194,6 +194,36 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
+  align-items: start;
+}
+
+.portfolio-item {
+  background: linear-gradient(135deg, #1a1a1a, #101010);
+  border: 1px solid #2d2d2d;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 12px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: #0b0b0b;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-item p {
+  padding: 14px 8px 6px;
+  color: #f0f0f0;
+  font-weight: 600;
 }
 
 .placeholder-box {
@@ -268,4 +298,64 @@ footer {
     margin: 8px 10px;
     display: inline-block;
   }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.lightbox-content {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.preview-box {
+  background: linear-gradient(135deg, #1a1a1a, #101010);
+  border: 1px solid #2d2d2d;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 12px;
+  text-align: center;
+}
+
+.preview-box img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  background: #0b0b0b;
+  border-radius: 12px;
+}
+
+.preview-box p {
+  padding: 14px 8px 6px;
+  color: #f0f0f0;
+  font-weight: 600;
 }
