@@ -176,7 +176,7 @@ header {
 
 .card {
   padding: 28px;
-  background: linear-gradient(135deg, #151515, #0f0f0f);
+  background: linear-gradient(145deg, #151515, #0c0c0c);
   border: 1px solid #2a2a2a;
   border-radius: 18px;
   transition: all 0.35s ease;
@@ -184,10 +184,28 @@ header {
   overflow: hidden;
 }
 
+.card {
+  box-shadow: inset 0 0 0 rgba(255,255,255,0);
+}
+
+.card:hover {
+  box-shadow:
+    inset 0 0 20px rgba(255,255,255,0.02),
+    0 25px 50px rgba(255, 79, 163, 0.2);
+}
+
 .card:hover {
   transform: translateY(-10px) scale(1.02);
   border-color: #ff4fa3;
   box-shadow: 0 20px 40px rgba(255, 79, 163, 0.15);
+}
+
+.card h3 {
+  margin-bottom: 14px;
+}
+
+.card p {
+  line-height: 1.6;
 }
 
 .card h3 {
@@ -634,11 +652,16 @@ button {
 }
 
 .service-icon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   color: #ff4fa3;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   stroke-width: 2.5;
+}
+
+.card,
+.service-icon {
+  transition: all 0.3s ease;
 }
 
 .card:hover .service-icon {
